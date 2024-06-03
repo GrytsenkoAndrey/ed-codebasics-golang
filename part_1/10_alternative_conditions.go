@@ -21,6 +21,12 @@
 // 		fmt.Println("less or equal 10 case")
 // }
 
+
+// Для замены символов в строке существует функция ReplaceAll(s, old, new string) string из пакета strings:
+// strings.ReplaceAll("hello world!", "world!", "buddy!") // hello buddy!
+// strings.ReplaceAll("one two three", " ", "_") // one_two_three
+
+
 package solution
 
 import (
