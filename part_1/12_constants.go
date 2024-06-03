@@ -94,3 +94,24 @@
 
 // В реальности список намного шире. Мы для простоты ограничимся тремя ошибками. Учтите, что если в функцию передать неизвестную ошибку, она должна вернуть код ошибки для сообщения UNKNOWN.
 
+package solution
+
+const (
+	OK = 0
+	CANCELLED = 1
+	UNKNOWN = 2
+)
+
+func ErrorMessageToCode(msg string) int {
+	if msg == "OK" {
+		return OK
+	}
+	if msg == "CANCELLED" {
+		return CANCELLED
+	}
+	if msg != "OK" && msg != "CANCELLED" {
+		return UNKNOWN
+	}
+
+	return UNKNOWN 
+}
