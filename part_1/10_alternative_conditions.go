@@ -32,3 +32,16 @@ package solution
 import (
 	"strings"
 )
+
+func ModifySpaces(s, mode string) string {
+	switch {
+		default:
+			return strings.ReplaceAll(s, " ", "*")
+		case mode == "dash":
+			return strings.ReplaceAll(s, " ", "-")
+		case mode == "underscore":
+			return strings.ReplaceAll(s, " ", "_")
+		case mode == "underscore":
+			return strings.ReplaceAll(s, " ", "*")
+	}
+}
