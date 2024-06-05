@@ -141,3 +141,14 @@ type Dog struct {
 	// … 
 }
 
+func (c Cat) Voice() string {
+	return "Мяу"
+}
+
+func (cw Cow) Voice() string {
+	return "Мууу"
+}
+
+func (d Dog) Voice() string {
+    return "Гав"
+}
