@@ -123,4 +123,21 @@
 // fmt.Println(dog.Voice()) // Гав
 // fmt.Println(cow.Voice()) // Мууу
 
+package solution
+
+type Voicer interface {
+    Voice() string
+}
+
+type Cat struct {
+    // … 
+}
+
+type Cow struct {
+    // … 
+}
+
+type Dog struct {
+	// … 
+}
 
