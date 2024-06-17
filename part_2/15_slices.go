@@ -57,6 +57,21 @@
 
 package solution
 
-func Remove(nums []int, i int) []int {
+// wrong
+// func Remove(nums []int, i int) []int {
+// 	if nums.len - 1 > i {
+// 		return nums
+// 	}
+//
+// 	nums[i] = nums[len(nums) - 1]
+// }
 
+func Remove(nums []int, i int) []int {
+	if i < 0 || i > len(nums)-1 {
+		return nums
+	}
+
+	nums[i] = nums[len(nums)-1]
+
+	return nums[:len(nums)-1]
 }
